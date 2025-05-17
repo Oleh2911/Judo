@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея | Дзюдо</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #33bbff;
+            color: #000;
+        }
+
+        header {
+            background-color: #0099ff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 30px 10px;
+            margin: 0;
+            font-size: 2.5em;
+            box-shadow: 0 0 20px #00000066;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00000033;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00000022;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px #00000055;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про дзюдо</a>
+            <a href="techniques.html">Техніки</a>
+            <a href="belts.html">Пояси</a>
+            <a href="#">Галерея</a>
+        </nav>
+    </header>
+
+    <h1>Галерея дзюдо</h1>
+
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <img src="judo1.jpg" alt="Дзюдо прийом 1">
+            <img src="judo2.jpg" alt="Тренування дзюдо">
+            <img src="judo3.jpg" alt="Кидок у дзюдо">
+            <img src="judo4.jpg" alt="Змагання з дзюдо">
+            <img src="judo5.jpg" alt="Утримання суперника">
+            <img src="judo6.jpg" alt="Падіння у дзюдо">
+            <img src="judo7.jpg" alt="Спаринг">
+            <img src="judo8.jpg" alt="Задушливий прийом">
+        </div>
+    </div>
+
+</body>
+</html>
